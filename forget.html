@@ -1,0 +1,82 @@
+<DOCTYPE html>
+<html>
+
+	<head>
+		
+		<meta charset="utf8" description="Home page of Project"/>
+		<title>Inventory Management System</title>
+		
+		<style>
+			body
+			{
+				color:black;
+				font:sans-serif;
+				background: white;
+			}
+			input[type="text"],input[type="password"],input[type="email"],input[type="date"]
+			{
+				text-align:center;
+				border-radius:20px;
+				height:30px;
+				width:200px;
+				border-color:#451963;
+				background:none;
+				transition:250ms;
+			}
+			input[type="submit"]
+			{
+				text-align:center;
+				border-radius:20px;
+				height:30px;
+				width:100px;
+				border-color:#451963;
+				transition:250ms;
+			}
+			input[type="text"]:focus,input[type="password"]:focus
+			{
+				width:250px;
+				height:35px;
+			}
+			input[type="submit"]:hover
+			{
+				width:110px;
+				border-color:#1D1DC2;
+				color:white;
+				background-color:blueviolet;
+			}
+		</style>
+        <link rel="stylesheet" href="css/bootstrap.css"></link>
+	</head>
+
+	<body>
+
+		<center>
+			<br>
+			<br>
+			<br>
+			<h1>Inventory Management System</h1>
+			<br>
+			<img src="user.png" style="height:100px;width:100px;">
+            
+			<h3>Reset Password</h3>
+            <br>
+			<form action="forget.php" method="POST">
+				<input type="text" placeholder="Username" name="user">
+				<br><br>
+                <label>What is your <b>birth place?</b></label>
+				<br>
+				<input type="text" placeholder="Security Answer" name="sec">
+				<br>
+				<br><label>What is your <b>Date of Birth?</b></label>
+				<input type="date" placeholder="Date of Birth" name="dob">
+				<br><br>
+				<input type="submit" value="Reset">
+			</form>
+			<h7>Didn't have an account? <a href="http://localhost/Project/Signup.html">Signup here</a></h7>
+			<br>
+			<h7>Already Know the Password? <a href="http://localhost/Project/home.html">Login here</a></h7>
+		</center>
+
+	</body>
+
+</html>

@@ -1,0 +1,14 @@
+<?php
+    if(isset($_POST["buy"]))
+    {
+        header('location:buy.html');
+    }
+    if(isset($_POST["cart"]))
+    {
+        header('location:cart.php');
+    }
+    if(isset($_POST["remove"]))
+    {
+        header('location:remove.php');
+    }
+?>

@@ -1,0 +1,78 @@
+<DOCTYPE html>
+<html>
+
+	<head>
+		
+		<meta charset="utf8" description="Delete Products"/>
+		<title>Inventory Management System</title>
+		
+		<style>
+			body
+			{
+				color:black;
+				font:sans-serif;
+				background: white;
+			}
+			input[type="text"],input[type="password"],input[type="email"],input[type="date"]
+			{
+				text-align:center;
+				border-radius:20px;
+				height:30px;
+				width:200px;
+				border-color:#451963;
+				background:none;
+				transition:250ms;
+			}
+			input[type="submit"]
+			{
+				text-align:center;
+				border-radius:20px;
+				height:30px;
+				width:100px;
+				border-color:#451963;
+				transition:250ms;
+			}
+			input[type="text"]:focus,input[type="password"]:focus
+			{
+				width:250px;
+				height:35px;
+			}
+			input[type="submit"]:hover
+			{
+				width:110px;
+				border-color:#1D1DC2;
+				color:white;
+				background-color:blueviolet;
+			}
+		</style>
+        <link rel="stylesheet" href="css/bootstrap.css"></link>
+	</head>
+
+	<body>
+
+		<center>
+			<br>
+			<br>
+			<br>
+			<h1>Inventory Management System</h1>
+			<br>
+			<img src="user.png" style="height:100px;width:100px;">
+			<h3>Add Products</h3>
+			<form action="del.php" method="POST">
+                <h7>Caution! : Entering the Delete Button in this section would delete the products from the database having the any values provided in <b>Any one of the Input'(s)</b> below</h7><br><br>
+				<input type="text" placeholder="Product Name" value="-1" name="pname">
+				<br><br>
+                <input type="text" placeholder="Product ID" value="-1" name="pid">
+				<br><br>
+                <input type="text" placeholder="Product Manufacturer" value="-1" name="pman">
+				<br><br>
+                <input type="text" placeholder="Rack ID" value="-1" name="rack">
+				<br><br>
+				<input type="submit" value="Delete">
+			</form>
+			<h7>Change Operations? <a href="http://localhost/Project/admin.html">Administrator Activities</a></h7>
+		</center>
+
+	</body>
+
+</html>

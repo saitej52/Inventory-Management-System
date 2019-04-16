@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8" description="This was an admin page" />
+        <meta content="width=device-width">
+		<title>Customer</title>
+        <style>
+            input[type="submit"]
+			{
+				text-align:center;
+				border-radius:20px;
+				height:30px;
+				width:100px;
+				border-color:#451963;
+				transition:250ms;
+			}
+            input[type="submit"]:hover
+			{
+				width:110px;
+				border-color:#1D1DC2;
+				color:white;
+				background-color:blueviolet;
+			}
+        </style>
+        <link rel="stylesheet" href="css/bootstrap.css"></link>
+	</head>
+	<body>
+		<center><h1>Inventory Management System</h1></center>
+        <br><br>
+        <center><h2>Hello, Customer</h2></center>
+        </div>
+        <br><br>
+			<center>
+			<img src='user.png' style='height:100px;width:100px;'/> <br><br>
+            
+            <h3>Customer Activities</h3>
+            <br><br>
+			<form action="admin.php" method="post">
+            <span></span>
+			<input type = 'submit' value='View All Products' name='view' style='color:white;background:#FF3366;height:50px;width:200px;border-radius:50px;' />
+            <input type = 'submit' value='Search Products' name='search' style='color:white;background:tomato;height:50px;width:200px;border-radius:50px;' />
+                <br><br>
+			</form>
+            <form action="customer.php" method="POST">
+            <input type="submit" value="Buy Products" name="buy" style='color:white;background:teal;height:50px;width:200px;border-radius:50px;'>
+            <input type="submit" value="Cart" name="cart" style='color:white;background:orchid;height:50px;width:200px;border-radius:50px;'>
+            <input type="submit" value="Remove from Cart" name="remove" style='color:white;background:deeppink;height:50px;width:200px;border-radius:50px;'>
+            </form>
+                <br><br>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+                <div align="center">
+        <form action="logout.php" method="post">
+            <input type="submit" name="logout" value="logout">
+        </form>
+	</body>
+</html>
