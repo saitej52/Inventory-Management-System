@@ -104,15 +104,25 @@
         $aff = mysqli_affected_rows($conn);
         if($aff>0)
         {
-        echo("Credentials Verified");
         while($row= mysqli_fetch_assoc($result))
         {
             if($row['security']==$sec)
             {
                 if($row['dob']==$dob)
                 {
+                    echo("Credentials Verified");
                     echo("Your Account Password is <b>".$row['password']."</b>");       
                 }
+                else
+                {
+                    echo("Credentials Cannot be Verified");
+                    break;
+                }
+            }
+            else
+            {
+                echo("Credentials Cannot be Verified");
+                break;
             }
         }
         }
